@@ -1,0 +1,4 @@
+* Thêm phần mô tả triệu chứng
+Thay đổi từ tình trạng thành triệu chứng :
+
+* Thêm cách viết luật 1,2,3 không cần đưa về horn chuẩn
