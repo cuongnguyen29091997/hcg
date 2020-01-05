@@ -12,7 +12,7 @@
   <li class="treeview"> 
     <a href="/cms-admin/tinh-trang/index">
       <i class="fa fa-folder"></i>
-      <span>Tình trạng</span>
+      <span>Triệu chứng</span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
@@ -21,7 +21,7 @@
   <li class="treeview"> 
     <a href="/cms-admin/benh-tinh-trang/index">
       <i class="fa fa-folder"></i>
-      <span>Bệnh - Tình trạng </span>
+      <span>Bệnh - Triệu chứng </span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>

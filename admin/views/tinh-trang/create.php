@@ -3,16 +3,16 @@
     require_once("admin/views/layouts/message.php");
 ?>
 <!-- Content -->
-  <h2>Thêm loại tình trạng</h2>
+  <h2>Thêm triệu chứng</h2>
   <form method="POST" action="/cms-admin/tinh-trang/store" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="f_name">Miêu tả tình trạng: </label>
+      <label for="f_name">Miêu tả triệu chứng: </label>
       <textarea type="text" placeholder="Trẻ có ho..." class="form-control" id="f_name" placeholder="Tình trạng hiện tại" name="summary"></textarea>
     </div>
 	<div class="form-group">
-		<label for="f_answer_parent">Câu hỏi phụ của: </label>
+		<label for="f_answer_parent">Triệu chứng con của triệu chứng: </label>
     <select name="parent_id" class="form-control" id="f_answer_parent">
-      <option value="-1">Gốc (Câu hỏi được hỏi đầu tiên trong quá trình tham vấn)</option>
+      <option value="-1">Không có triệu chứng nguồn</option>
       <?php foreach ($data['answers'] as $ans) echo "<option value='$ans->id'>$ans->summary</option>"; ?>
     </select>
 	</div>

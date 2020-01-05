@@ -6,13 +6,13 @@
 <!-- Content -->
 <div id="alert"></div>
 <div>
-	<a class="btn btn-success" href="/cms-admin/benh-tinh-trang/create">Thêm Các tình trạng dẫn đến bệnh</a>
+	<a class="btn btn-success" href="/cms-admin/benh-tinh-trang/create">Thêm Các triệu chứng của bệnh</a>
 </div>
 <table id="table" width="100%" class="table">
 	<thead>
 		<tr>
 			<th scope="col">Loại bệnh</th>
-			<th scope="col">Danh sách các tình trạng</th>
+			<th scope="col">Danh sách các triệu chứng</th>
 		</tr>
 	</thead>
 	<tbody>

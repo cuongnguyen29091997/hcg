@@ -4,10 +4,10 @@
     require_once("admin/views/layouts/message.php");
 ?>
 <!-- Content -->
-  <h2>Cập nhật tình trạng bệnh</h2>
+  <h2>Cập nhật triệu chứng</h2>
   <form method="POST" action="/cms-admin/tinh-trang/update/<?php echo($data['this']['id']); ?>">
     <div class="form-group">
-      <label for="f_summary">Tình trạng bệnh: </label>
+      <label for="f_summary">Triệu chứng: </label>
       <input type="text" class="form-control" id="f_summary" value="<?php echo $data['this']['summary']; ?>" placeholder="Tiêu chảy" name="summary">
     </div>
  
