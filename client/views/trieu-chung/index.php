@@ -10,8 +10,6 @@
             <a href="/trieu-chung/show/<?php echo $trieuChung->id; ?>"><img src="/common/images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
             <div class="excerpt">
             <span class="post-category text-white bg-secondary mb-3"><?php echo $trieuChung->name; ?></span>
-
-            <h2><a href="/trieu-chung/show/<?php echo $trieuChung->id; ?>"><?php echo $trieuChung->name; ?></a></h2>
             </div>
           </div>
         </div>

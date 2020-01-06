@@ -10,8 +10,6 @@
             <a href="/benh/show/<?php echo $benh->id; ?>"><img src="/common/images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
             <div class="excerpt">
             <span class="post-category text-white bg-secondary mb-3"><?php echo $benh->name; ?></span>
-
-            <h2><a href="/benh/show/<?php echo $benh->id; ?>"><?php echo $benh->name; ?></a></h2>
             </div>
           </div>
         </div>

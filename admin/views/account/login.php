@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/common/img/b-logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/common/css/style-admin.css">
 </head>
 <body>
 <div class="container-fluid form-huemall">

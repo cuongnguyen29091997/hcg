@@ -4,10 +4,9 @@
   <section id="all-news" class="pd-space">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-9 col-lg-9">
+        <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="news-detail-wrap p-4 rounded shadow-sm border">
-            <h3><?php echo $trieuChung['name']; ?> là gì</h3>
-            
+            <h3><?php echo $trieuChung['name']; ?></h3>
             <p><?php echo $trieuChung['des']; ?></p>
           </div>
         </div>
