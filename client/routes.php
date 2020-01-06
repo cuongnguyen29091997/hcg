@@ -7,7 +7,16 @@ $routes = [
 		"index" => [],
 	],
 	"benh" => [
-		"show" => ['alias'],
+		'index' => [],
+		"show" => ['id'],
+	],
+	"trieu-chung" => [
+		'index' => [],
+		"show" => ['id'],
+	],
+	"chan-doan" => [
+		'index' => [],
+		"result" => [],
 	],
 ];
 if(!isset($parameters[0]) || !isset($routes[$parameters[0]])) {

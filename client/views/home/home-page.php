@@ -1,18 +1,55 @@
 <?php 
   ob_start();
 ?>
-<div class="alls">
-<form action="/home" method="POST">
-  <fieldset>
-  <legend><b style="text-transform: uppercase;">Trả lời các câu hỏi trắc nghiệm sau : </b></legend>
-  <?php foreach ($data['answers'] as $key => $value) { ?>
-    <h3><input type="checkbox" name="keyss[]" value="<?php echo $value->id; ?>"><?php echo $value->summary; ?><br></h3>
-  <?php } ?>
-  </fieldset>
-  <br>
-  <input type="text" name="old" hidden="true" value="<?php echo($data['flash-parent']); ?>">
-  <button type="submit">Tiếp theo</button>
-</form>
+<div class="row align-items-stretch retro-layout-2">
+          <div class="col-md-4">
+            <a href="single.html" class="h-entry mb-30 v-height gradient" style="background-image: url('images/img_1.jpg');">
+              
+              <div class="text">
+                <h2>The AI magically removes moving objects from videos.</h2>
+                <span class="date">July 19, 2019</span>
+              </div>
+            </a>
+            <a href="single.html" class="h-entry v-height gradient" style="background-image: url('images/img_2.jpg');">
+              
+              <div class="text">
+                <h2>The AI magically removes moving objects from videos.</h2>
+                <span class="date">July 19, 2019</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="single.html" class="h-entry img-5 h-100 gradient" style="background-image: url('images/img_v_1.jpg');">
+              
+              <div class="text">
+                <div class="post-categories mb-3">
+                  <span class="post-category bg-danger">Travel</span>
+                  <span class="post-category bg-primary">Food</span>
+                </div>
+                <h2>The AI magically removes moving objects from videos.</h2>
+                <span class="date">July 19, 2019</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="single.html" class="h-entry mb-30 v-height gradient" style="background-image: url('images/img_3.jpg');">
+              
+              <div class="text">
+                <h2>The 20 Biggest Fintech Companies In America 2019</h2>
+                <span class="date">July 19, 2019</span>
+              </div>
+            </a>
+            <a href="single.html" class="h-entry v-height gradient" style="background-image: url('images/img_4.jpg');">
+              
+              <div class="text">
+                <h2>The 20 Biggest Fintech Companies In America 2019</h2>
+                <span class="date">July 19, 2019</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 <?php
 $content = ob_get_clean();
 require_once('client/views/master-page.php');

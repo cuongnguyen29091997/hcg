@@ -10,21 +10,19 @@
 <table id="table" width="100%" class="table">
   <thead>
     <tr>
-      <th scope="col">Loại bệnh</th>
+      <th scope="col">Tên bệnh</th>
       <th scope="col">Hướng xử trí</th>
-      <th scope="col">Alias</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
-<?php foreach ($data['illness'] as $category) { ?>
+<?php foreach ($sickness as $sick) { ?>
     <tr>
-      <td><?php echo "$category->summary"; ?></td>
-      <td><?php echo "$category->solution"; ?></td>
-      <td><?php echo "$category->alias"; ?></td>
+      <td><?php echo "$sick->name"; ?></td>
+      <td><?php echo "$sick->solution"; ?></td>
       <td>
-        <a href="/cms-admin/benh/edit/<?php echo($category->id) ?>">Sửa</a>
-        <a href="/cms-admin/benh/delete/<?php echo($category->id) ?>">Xóa</a>
+        <a href="/cms-admin/benh/edit/<?php echo($sick->id) ?>">Sửa</a>
+        <a href="/cms-admin/benh/delete/<?php echo($sick->id) ?>">Xóa</a>
       </td>
     </tr>
 <?php } ?>

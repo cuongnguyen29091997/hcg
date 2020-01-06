@@ -14,10 +14,15 @@ class BaseController
             unset($_SESSION['message']);
         }
         $view_file = $this->folder . '/' . $file . '.php';
+        extract($data);
         if (is_file($view_file)) {
           require_once($view_file);
         } else {
             header("Location : /home/index");
         }
+    }
+    public function error() {
+        header("Location : /home/index");
+        die();
     }
 }

@@ -15,9 +15,10 @@ class BaseController
             unset($_SESSION['message']);
         }
         if(isset($_SESSION['info-mess'])) {
-            $data['info-mess'] = $_SESSION['info-mess'];
+            $data['infoMess'] = $_SESSION['info-mess'];
             unset($_SESSION['info-mess']);
         }
+        extract($data);
         if (is_file($view_file)) {
           require_once($view_file);
         } else {

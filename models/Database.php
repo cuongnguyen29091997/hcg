@@ -5,7 +5,7 @@ class Database {
 	private $_host = "localhost";
 	private $_username = "root";
 	private $_password = "";
-	private $_database = "es_illness";
+	private $_database = "es_diagnostic";
 
 	public static function getInstance() {
 		if(!self::$_instance) {

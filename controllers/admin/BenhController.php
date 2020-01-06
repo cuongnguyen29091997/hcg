@@ -13,12 +13,11 @@
 			$dataModel = $this->prt->getPage($page);
 			if(!$dataModel['status']) {
 				$_SESSION['message'] = "Có một lỗi nghiêm trọng xảy ra. Vui lòng liên hệ sđt : 0935170032";
-				$data['illness'] = [];
+				$data['sickness'] = [];
 				$this->render('index', $data);
 				die();
 			}
-			$data['illness'] = $dataModel['data'];
-			$mapCategory = [];
+			$data['sickness'] = $dataModel['data'];
 			$this->render('index', $data);
 		}
 		public function create() {
@@ -31,20 +30,20 @@
 				$_SESSION['message'] = "Không tìm thấy dữ liệu cần chỉnh sửa";
 				header("location: /cms-admin/benh/index");
 			}
-			$data['illness'] = $dataModel['data'];
+			$data['sick'] = $dataModel['data'];
 			if(!$dataModel['status']) {
 				$_SESSION['message'] = "Có một lỗi nghiêm trọng xảy ra. Vui lòng liên hệ sđt : 0935170032";
-				$data['illness'] = [];
+				$data['sick'] = [];
 				$this->render('index', $data);
 			}
 			$dataModel = $this->prt->getAll();
 			if(!$dataModel['status']) {
 				$_SESSION['message'] = "Có một lỗi nghiêm trọng xảy ra. Vui lòng liên hệ sđt : 0935170032";
-				$data['illness'] = [];
+				$data['sick'] = [];
 				$this->render('index', $data);
 			}
 
-			$data['illness'] = $dataModel['data'][0];
+			$data['sick'] = $dataModel['data'][0];
 			$this->render("edit",$data);
 		}
 		public function update() {

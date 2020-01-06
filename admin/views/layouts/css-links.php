@@ -13,4 +13,4 @@
 <link href="/common/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css">
 <link href="/common/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
 <link href="/common/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="/common/css/style.css">
+<link rel="stylesheet" type="text/css" href="/common/css/style-admin.css">

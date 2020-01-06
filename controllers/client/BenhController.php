@@ -9,14 +9,21 @@
 			Parent::__construct($this->folder);
 			$this->prt = new Benh;
 		}
+		function index() {
+			$benhMd = new Benh;
+			$benhs = $benhMd->getAll();
+			if(!$benhs['status']) $this->error(); 
+			$data['benhs'] = $benhs['data'];
+			$this->render('index', $data);
+		}
 		function show() {
-			$dataModel = $this->prt->getOneByCondition(array("key" => "alias","value" => $_GET['alias']));
+			$dataModel = $this->prt->getById($_GET['id']);
 	        if(!$dataModel['status']) {
 	        	header("Location: /home/index");
             	die();              
         	} else $data['benh'] = $dataModel['data'];
-        	$data['panel-title'] = "Bệnh : ".$data['benh']['summary'];
-        	$data['title'] = "Bệnh : ".$data['benh']['summary'];
+        	$data['panel-title'] = "Bệnh : ".$data['benh']['name'];
+        	$data['title'] = "Bệnh : ".$data['benh']['name'];
         	$this->render('show',$data);
 		}
 	}

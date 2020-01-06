@@ -14,7 +14,7 @@ $routes = [
 		'delete' => ['id'],
 		'store' => [],
 	],
-	"tinh-trang" => [
+	"trieu-chung" => [
 		'index' => ['fake-data','page'],
 		'create' => [],
 		'edit' => ['id'],
@@ -22,7 +22,15 @@ $routes = [
 		'delete' => ['id'],
 		'store' => []
 	],
-	"benh-tinh-trang" => [
+	"trieu-chung-benh" => [
+		'index' => ['fake-data','page'],
+		'create' => [],
+		'edit' => ['id'],
+		'update' => ['id'],
+		'delete' => ['id'],
+		'store' => []
+	],
+	"trieu-chung-tham-van" => [
 		'index' => ['fake-data','page'],
 		'create' => [],
 		'edit' => ['id'],

@@ -9,17 +9,17 @@
 <form action="/cms-admin/benh/store" method="POST" id="form-add">
   <div class="form-row">
     <div class="form-group col-md-12">
-  		<label for="fa_summary">Tóm tắt bệnh: </label>
-      <textarea required id="fa_summary" class="form-control" name="summary" placeholder="Tiêu chảy"></textarea> 
+  		<label for="fa_name">Tên bệnh: </label>
+      <textarea required id="fa_name" class="form-control" name="name" placeholder="Tiêu chảy"></textarea> 
     </div>
-      <div class="form-group col-md-12">
-		    <label for="fa_alias"> Alias : <span style="color: red;font-style: italic;">*(Khác nhau cho từng loại bệnh, mục đích dùng để làm đường dẫn)</span></label>
-      	<input required id="fa_alias" type="text" class="form-control" placeholder="tieu-chay" name="alias">
-      </div>
-      <div class="form-group col-md-12">
-        <label for="fa_solution"> Hướng xử trí : </label>
-        <textarea required id="fa_solution" class="form-control" placeholder="Làm một cái gì đó để chữa bệnh tiêu chảy" name="solution"></textarea> 
-      </div>
+    <div class="form-group col-md-12">
+      <label for="fa_des">Mô tả chi tiết : </label>
+      <textarea required id="fa_des" class="form-control" placeholder="Làm một cái gì đó để chữa bệnh tiêu chảy" name="des"></textarea> 
+    </div>
+    <div class="form-group col-md-12">
+      <label for="fa_solution"> Hướng xử trí : </label>
+      <textarea required id="fa_solution" class="form-control" placeholder="Làm một cái gì đó để chữa bệnh tiêu chảy" name="solution"></textarea> 
+    </div>
   </div>
   <button class="btn btn-success" type="submit">Thêm bệnh</button>
 </form>
@@ -29,4 +29,5 @@
 ?>
 <script type="text/javascript">
   CKEDITOR.replace('fa_solution');
+  CKEDITOR.replace('fa_des');
 </script>
