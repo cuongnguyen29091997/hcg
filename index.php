@@ -10,4 +10,4 @@ if(array_key_exists($parameters[0],$appFolders)) $rootRoute = $appFolders[array_
 
 $folderRequired = ($rootRoute ? $rootRoute :  "client") . "/routes.php"; // default
 require $folderRequired;
-?>asdasdawd
+?>
